@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+
+    <artifactId>MariiaCourses</artifactId>
+
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <modules>
+
+        <module>hm21_22</module>
+
+    </modules>
+
+    <repositories>
+
+        <repository>
+
+            <id>central</id>
+
+            <url>https://repo.maven.apache.org/maven2</url>
+
+        </repository>
+
+    </repositories>
+
+    <properties>
+
+        <maven.compiler.source>20</maven.compiler.source>
+
+        <maven.compiler.target>20</maven.compiler.target>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <junit.platform.version>1.10.2</junit.platform.version>
+
+        <junit.jupiter.version>5.7.0</junit.jupiter.version>
+
+        <aspectj.version>1.9.5</aspectj.version>
+
+        <allure.version>2.13.6</allure.version>
+
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+
+            <groupId>io.rest-assured</groupId>
+
+            <artifactId>rest-assured</artifactId>
+
+            <version>5.4.0</version>
+
+        </dependency>
+
+
+        <dependency>
+
+            <groupId>org.slf4j</groupId>
+
+            <artifactId>slf4j-api</artifactId>
+
+            <version>2.0.12</version>
+
+        </dependency>
+
+
+        <dependency>
+
+            <groupId>ch.qos.logback</groupId>
+
+            <artifactId>logback-classic</artifactId>
+
+            <version>1.4.14</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.apache.maven.plugin-tools</groupId>
+
+            <artifactId>maven-plugin-annotations</artifactId>
+
+            <version>3.11.0</version>
+
+            <scope>provided</scope>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.apache.maven.plugins</groupId>
+
+            <artifactId>maven-surefire-plugin</artifactId>
+
+            <version>3.2.5</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.seleniumhq.selenium</groupId>
+
+            <artifactId>selenium-java</artifactId>
+
+            <version>4.18.1</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.seleniumhq.selenium</groupId>
+
+            <artifactId>selenium-chrome-driver</artifactId>
+
+            <version>4.18.1</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.seleniumhq.selenium</groupId>
+
+            <artifactId>selenium-support</artifactId>
+
+            <version>4.12.1</version>
+
+        </dependency>
+
+
+        <dependency>
+
+            <groupId>io.rest-assured</groupId>
+
+            <artifactId>rest-assured</artifactId>
+
+            <version>5.4.0</version>
+
+            <scope>compile</scope>
+
+        </dependency>
+
+
+        <dependency>
+
+            <groupId>org.junit.jupiter</groupId>
+
+            <artifactId>junit-jupiter-api</artifactId>
+
+            <version>5.10.0</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.junit.jupiter</groupId>
+
+            <artifactId>junit-jupiter-params</artifactId>
+
+            <version>${junit.jupiter.version}</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.junit.jupiter</groupId>
+
+            <artifactId>junit-jupiter-engine</artifactId>
+
+            <version>${junit.jupiter.version}</version>
+
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.junit.platform</groupId>
+
+            <artifactId>junit-platform-engine</artifactId>
+
+            <version>1.10.2</version>
+
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>org.junit.platform</groupId>
+
+            <artifactId>junit-platform-suite-api</artifactId>
+
+            <version>1.10.2</version>
+
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>io.qameta.allure</groupId>
+
+            <artifactId>allure-junit5</artifactId>
+
+            <version>${allure.version}</version>
+
+        </dependency>
+
+
+        <dependency>
+
+            <groupId>com.fasterxml.jackson.core</groupId>
+
+            <artifactId>jackson-databind</artifactId>
+
+            <version>2.16.0</version>
+
+        </dependency>
+
+
+        <dependency>
+
+            <groupId>com.fasterxml.jackson.core</groupId>
+
+            <artifactId>jackson-core</artifactId>
+
+            <version>2.16.0</version>
+
+        </dependency>
+
+
+
+        <dependency>
+
+            <groupId>org.junit.platform</groupId>
+
+            <artifactId>junit-platform-suite</artifactId>
+
+            <version>1.10.2</version>
+
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>io.cucumber</groupId>
+
+            <artifactId>cucumber-java</artifactId>
+
+            <version>7.16.1</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>io.cucumber</groupId>
+
+            <artifactId>cucumber-junit-platform-engine</artifactId>
+
+            <version>7.8.1</version>
+
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>io.cucumber</groupId>
+
+            <artifactId>cucumber-java</artifactId>
+
+            <version>7.15.0</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>io.cucumber</groupId>
+
+            <artifactId>cucumber-junit</artifactId>
+
+            <version>7.16.1</version>
+
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>io.cucumber</groupId>
+
+            <artifactId>gherkin</artifactId>
+
+            <version>26.2.0</version>
+
+        </dependency>
+
+        <dependency>
+
+            <groupId>com.codeborne</groupId>
+
+            <artifactId>selenide</artifactId>
+
+            <version>7.2.3</version>
+
+        </dependency>
+
+    </dependencies>
+
+
+    <build>
+
+        <plugins>
+
+            <plugin>
+
+                <groupId>org.apache.maven.plugins</groupId>
+
+                <artifactId>maven-surefire-plugin</artifactId>
+
+                <version>3.0.0-M5</version>
+
+                <configuration>
+
+                    <argLine>
+
+                        -javaagent:C:\Users\n.ptashchenco\Downloads\aspectjweaver-1.9.21.1.jar
+
+                    </argLine>
+
+                    <systemPropertyVariables>
+
+                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+
+                    </systemPropertyVariables>
+
+                    <testFailureIgnore>true</testFailureIgnore>
+
+                </configuration>
+
+                <dependencies><dependency>
+
+                    <groupId>org.aspectj</groupId>
+
+                    <artifactId>aspectjweaver</artifactId>
+
+                    <version>1.9.21.1</version>
+
+                </dependency>
+
+                </dependencies>
+
+            </plugin>
+            <!-- Остальные плагины -->
+            <!-- Allure plugin -->
+
+            <plugin>
+
+                <groupId>io.qameta.allure</groupId>
+
+                <artifactId>allure-maven</artifactId>
+
+                <version>2.10.0</version>
+
+                <configuration>
+
+                    <reportVersion>2.17.2</reportVersion>
+
+                </configuration>
+
+                <executions>
+
+                    <execution>
+
+                        <id>generate-allure-report</id>
+
+                        <phase>verify</phase>
+
+                        <goals>
+
+                            <goal>serve</goal>
+
+                        </goals>
+
+                    </execution>
+
+                </executions>
+
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+
+
+</project>
